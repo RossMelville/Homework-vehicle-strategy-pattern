@@ -11,7 +11,15 @@ public class TractorTest {
     tractor = new Tractor(15, true);
   }
 
-  
+  @Test
+  public void driveDistanceReturnsTime() {
+    assertEquals(2, tractor.driveTime(30));
+  }
+
+  @Test
+  public void canGetAverageSpeed() {
+    assertEquals(15, tractor.getAverageSpeed());
+  }
 
 
 
