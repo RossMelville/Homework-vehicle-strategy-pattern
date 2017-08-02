@@ -1,27 +1,20 @@
 package driver_management;
 import behaviours.*;
 
-public class DodgemCar implements Driveable {
+public class DodgemCar extends Vehicle implements Driveable {
 
   private int averageSpeed;
   private int seats;
 
   public DodgemCar(int averageSpeed, int seats) {
-    this.averageSpeed = averageSpeed;
+    super(averageSpeed);
     this.seats = seats;
-  }
-
-  public int driveTime(int distance) {
-    return distance/this.averageSpeed;
   }
 
   public int getSeats() {
     return this.seats;
   }
 
-  public int getAverageSpeed() {
-    return this.averageSpeed;
-  }
 
 
 }
