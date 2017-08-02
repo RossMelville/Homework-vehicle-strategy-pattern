@@ -2,6 +2,7 @@ package driver_management;
 import behaviours.*;
 
 public class DodgemCar implements Driveable {
+  
   private int averageSpeed;
   private int seats;
 
