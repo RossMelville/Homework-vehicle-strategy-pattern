@@ -15,4 +15,8 @@ public class Driver {
     return this.name;
   }
 
+  public int driveTime(int distance) {
+    return this.drive.driveTime(distance);
+  }
+
 }

@@ -20,6 +20,10 @@ public class DriverTest {
     assertEquals("Dave", driver.getName());
   }
 
+  @Test
+  public void checkDriveTime() {
+    assertEquals(1, driver.driveTime(30));
+  }
 
 
 
