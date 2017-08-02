@@ -16,4 +16,15 @@ public class QuadBikeTest {
     assertEquals(1, bike.driveTime(30));
   }
 
+  @Test
+  public void canGetAverageSpeed() {
+    assertEquals(30, bike.getAverageSpeed());
+  }
+
+  @Test 
+  public void canGetEngineCapacity() {
+    assertEquals(200, bike.getEngineCapacity());
+  }
+
+
 }
