@@ -16,4 +16,15 @@ public class DodgemCarTest {
       assertEquals(1, car.driveTime(10));
     }
 
+    @Test
+    public void canGetSeats() {
+      assertEquals(2, car.getSeats());
+    }
+
+    @Test
+    public void canGetAverageSpeed() {
+      assertEquals(10, car.getAverageSpeed());
+    }
+
+
 }

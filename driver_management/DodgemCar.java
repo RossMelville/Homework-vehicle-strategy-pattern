@@ -2,7 +2,7 @@ package driver_management;
 import behaviours.*;
 
 public class DodgemCar implements Driveable {
-  
+
   private int averageSpeed;
   private int seats;
 
@@ -13,6 +13,14 @@ public class DodgemCar implements Driveable {
 
   public int driveTime(int distance) {
     return distance/this.averageSpeed;
+  }
+
+  public int getSeats() {
+    return this.seats;
+  }
+
+  public int getAverageSpeed() {
+    return this.averageSpeed;
   }
 
 
