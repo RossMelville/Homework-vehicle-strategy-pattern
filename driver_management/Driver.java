@@ -19,4 +19,12 @@ public class Driver {
     return this.drive.driveTime(distance);
   }
 
+  public int averageSpeed() {
+    return this.drive.getAverageSpeed();
+  }
+
+  public void setDrive(Driveable drive) {
+    this.drive = drive;
+  }
+
 }

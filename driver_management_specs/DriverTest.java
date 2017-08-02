@@ -21,10 +21,26 @@ public class DriverTest {
   }
 
   @Test
-  public void checkDriveTime() {
+  public void checkDriveTimeBike() {
     assertEquals(1, driver.driveTime(30));
   }
 
+  @Test
+  public void checkDriveTimeCar() {
+    driver = new Driver("Bob", car);
+    assertEquals(2, driver.driveTime(20));
+  }
+
+  @Test
+  public void checkAverageSpeedOfDrive() {
+    assertEquals(30, driver.averageSpeed());
+  }
+
+  @Test
+  public void canUpdateDriveable() {
+    driver.setDrive(car);
+    assertEquals(10, driver.averageSpeed());
+  }
 
 
 }
