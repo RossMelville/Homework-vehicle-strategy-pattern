@@ -5,8 +5,8 @@ public class Tractor extends Vehicle implements Driveable {
 
   private boolean trailer;
 
-  public Tractor(int averageSpeed, boolean trailer) {
-    super(averageSpeed);
+  public Tractor(int averageSpeed, int seats, boolean trailer) {
+    super(averageSpeed, seats);
     this.trailer = trailer;
   }
 

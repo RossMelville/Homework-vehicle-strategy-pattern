@@ -11,9 +11,9 @@ public class DriverTest {
 
   @Before
   public void before() {
-    bike = new QuadBike(30, 200);
+    bike = new QuadBike(30, 2, 200);
     car = new DodgemCar(10, 2, "Electric");
-    tractor = new Tractor(15, true);
+    tractor = new Tractor(15, 1, true);
     driver = new Driver("Dave", bike);
   }
 

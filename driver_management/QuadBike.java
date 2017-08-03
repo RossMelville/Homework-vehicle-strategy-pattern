@@ -6,8 +6,8 @@ public class QuadBike extends Vehicle implements Driveable {
   private int engineCapacity;
   
 
-  public QuadBike(int averageSpeed, int engineCapacity) {
-    super(averageSpeed);
+  public QuadBike(int averageSpeed, int seats, int engineCapacity) {
+    super(averageSpeed, seats);
     this.engineCapacity = engineCapacity; 
   }
 

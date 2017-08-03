@@ -8,7 +8,7 @@ public class TractorTest {
 
   @Before
   public void before() {
-    tractor = new Tractor(15, true);
+    tractor = new Tractor(15, 1, true);
   }
 
   @Test
@@ -28,7 +28,7 @@ public class TractorTest {
 
   @Test
   public void canCheckTractorHasNoTrailer() {
-    tractor = new Tractor(15, false);
+    tractor = new Tractor(15, 1, false);
     assertEquals(false, tractor.hasTrailer());
   }
 
