@@ -16,4 +16,5 @@ public abstract class Vehicle {
     return distance/this.averageSpeed;
   }
 
+
 }

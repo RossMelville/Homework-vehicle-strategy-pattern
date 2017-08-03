@@ -3,17 +3,21 @@ import behaviours.*;
 
 public class DodgemCar extends Vehicle implements Driveable {
 
-  private int averageSpeed;
   private int seats;
+  private String motor;
 
-  public DodgemCar(int averageSpeed, int seats) {
+  public DodgemCar(int averageSpeed, int seats, String motor) {
     super(averageSpeed);
-    this.seats = seats;
+    this.seats =seats;
+    this.motor = motor;
   }
+
 
   public int getSeats() {
     return this.seats;
   }
+ 
+  
 
 
 

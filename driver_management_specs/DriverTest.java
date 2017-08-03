@@ -7,11 +7,13 @@ public class DriverTest {
   Driver driver;
   QuadBike bike;
   DodgemCar car;
+  Tractor tractor;
 
   @Before
   public void before() {
     bike = new QuadBike(30, 200);
-    car = new DodgemCar(10, 2);
+    car = new DodgemCar(10, 2, "Electric");
+    tractor = new Tractor(15, true);
     driver = new Driver("Dave", bike);
   }
 

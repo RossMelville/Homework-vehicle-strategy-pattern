@@ -21,6 +21,15 @@ public class TractorTest {
     assertEquals(15, tractor.getAverageSpeed());
   }
 
+  @Test
+  public void canCheckTractorHasTrailer() {
+    assertEquals(true, tractor.hasTrailer());
+  }
 
+  @Test
+  public void canCheckTractorHasNoTrailer() {
+    tractor = new Tractor(15, false);
+    assertEquals(false, tractor.hasTrailer());
+  }
 
 }
